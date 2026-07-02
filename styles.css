@@ -17,8 +17,8 @@ img, svg { display: block; }
 
 /* logo */
 .logo { display: inline-flex; align-items: center; gap: 11px; }
-.logo .brand { font-size: 22px; font-weight: 600; letter-spacing: -.03em; color: var(--ink); }
-.logo.big .brand { font-size: 28px; }
+.logo .brand { font-family: "Fraunces", Georgia, "Times New Roman", serif; font-size: 24px; font-weight: 600; letter-spacing: -.01em; color: var(--ink); }
+.logo.big .brand { font-size: 30px; }
 
 /* buttons */
 .btn { display: inline-flex; align-items: center; gap: 8px; font: inherit; font-weight: 500; cursor: pointer;
