@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Pricing — Figura</title>
+<meta name="description" content="Figura pricing: free for individuals, an affordable Pro plan for teachers, and site licences for departments and schools." />
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+  .tiers { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; align-items: start; }
+  @media (max-width: 860px){ .tiers { grid-template-columns: 1fr; } }
+  .tier { background: #fff; border: 1px solid var(--border); border-radius: 16px; padding: 30px 26px; }
+  .tier.feat { border: 2px solid var(--accent); box-shadow: var(--shadow); position: relative; }
+  .tier .tag { position: absolute; top: -12px; left: 26px; background: var(--accent); color: #fff; font-size: 12px; font-weight: 600; padding: 5px 12px; border-radius: 999px; }
+  .tier h3 { font-size: 20px; font-weight: 600; }
+  .tier .price { font-size: 40px; font-weight: 700; letter-spacing: -.02em; margin: 14px 0 2px; }
+  .tier .price small { font-size: 16px; font-weight: 500; color: var(--muted); }
+  .tier .who { color: var(--muted); font-size: 15px; margin-bottom: 20px; }
+  .tier ul { list-style: none; margin: 0 0 24px; }
+  .tier li { display: flex; gap: 10px; align-items: flex-start; font-size: 15px; margin-bottom: 11px; }
+  .tier li svg { flex: none; margin-top: 4px; color: var(--teal); }
+  .tier .btn { width: 100%; justify-content: center; }
+  .note { text-align: center; color: var(--muted); font-size: 15px; margin-top: 34px; }
+  .faq { max-width: 760px; margin: 0 auto; }
+  .faq .q { border-top: 1px solid var(--border); padding: 20px 0; }
+  .faq .q b { display: block; margin-bottom: 6px; font-weight: 600; }
+  .faq .q p { color: var(--muted); font-size: 15px; }
+</style>
+</head>
+<body>
+<header><div class="wrap"><nav>
+  <a class="logo" href="index.html"><svg width="34" height="34" viewBox="0 0 40 40" aria-hidden="true"><defs><linearGradient id="fg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#6d63e0"/><stop offset="1" stop-color="#3f379a"/></linearGradient></defs><path d="M13 9 V32" fill="none" stroke="url(#fg)" stroke-width="3.6" stroke-linecap="round"/><path d="M13 9 H25 A7 7 0 0 1 30.5 15" fill="none" stroke="url(#fg)" stroke-width="3.6" stroke-linecap="round"/><path d="M13 20 H24" fill="none" stroke="url(#fg)" stroke-width="3.6" stroke-linecap="round"/><circle cx="30.5" cy="21" r="1.9" fill="#6d63e0"/></svg><span class="brand">Figura</span></a>
+  <div class="links">
+    <a class="nl" href="features.html">Features</a>
+    <a class="nl active" href="pricing.html">Pricing</a>
+    <a class="nl" href="about.html">About</a>
+    <a class="nl" href="contact.html">Contact</a>
+    <a class="btn btn-primary" href="app.html" target="_blank" rel="noopener">Launch Figura</a>
+  </div>
+</nav></div></header>
+
+<div class="page-head"><div class="wrap narrow"><h1>Simple pricing for teachers</h1><p>Start free. Upgrade when Figura saves you real time every week. School licences make it easy for whole departments.</p></div></div>
+
+<section><div class="wrap">
+  <div style="text-align:center;margin-bottom:26px">
+    <label style="font-size:14px;color:var(--muted)">Currency:
+      <select id="cur-sel" style="font:inherit;font-size:14px;padding:6px 10px;border:1px solid var(--border);border-radius:8px;margin-left:6px">
+        <option value="AUD">AUD (A$)</option>
+        <option value="USD">USD (US$)</option>
+        <option value="GBP">GBP (£)</option>
+        <option value="EUR">EUR (€)</option>
+        <option value="NZD">NZD (NZ$)</option>
+        <option value="CAD">CAD (C$)</option>
+      </select>
+    </label>
+  </div>
+  <div class="tiers">
+    <div class="tier">
+      <h3>Free</h3>
+      <div class="price" data-price="free">£0</div>
+      <div class="who">For trying it out &amp; light use</div>
+      <ul>
+        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg>All core diagram tools</li>
+        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg>PNG &amp; SVG export</li>
+        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg>Works in your browser</li>
+        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg>Small watermark on exports</li>
+      </ul>
+      <a class="btn btn-ghost" href="app.html" target="_blank" rel="noopener">Start free</a>
+    </div>
+    <div class="tier feat">
+      <span class="tag">Most popular</span>
+      <h3>Pro</h3>
+      <div class="price"><span data-price="pro">£4</span><small> / month</small></div>
+      <div class="who">Billed annually · for individual teachers</div>
+      <ul>
+        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg>Everything in Free, no watermark</li>
+        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg>Unlimited saved diagrams &amp; library</li>
+        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg>Worksheet builder &amp; answer layer</li>
+        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg>High-resolution &amp; EMF export</li>
+      </ul>
+      <a class="btn btn-primary" href="contact.html">Get Pro</a>
+    </div>
+    <div class="tier">
+      <h3>Department</h3>
+      <div class="price">From <span data-price="dept">£150</span><small> / year</small></div>
+      <div class="who">For whole departments &amp; schools</div>
+      <ul>
+        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg>Everything in Pro for all staff</li>
+        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg>Shared department diagram library</li>
+        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg>Invoice / purchase-order billing</li>
+        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg>Priority support</li>
+      </ul>
+      <a class="btn btn-ghost" href="contact.html">Contact us</a>
+    </div>
+  </div>
+  <p class="note">🎉 <b>Early access:</b> Figura is currently <b>free to use</b> while we build. Paid plans arrive as the saved-work and worksheet features land — lock in early-supporter pricing by getting in touch.</p>
+</div></section>
+
+<section class="section-soft"><div class="wrap">
+  <h2>Questions</h2>
+  <div class="faq" style="margin-top:30px">
+    <div class="q"><b>Do students need accounts?</b><p>No. Figura is a tool for teachers to make diagrams. Students never log in and no pupil data is collected.</p></div>
+    <div class="q"><b>Can I use the diagrams in my own exams and sell resources?</b><p>Yes — you own the diagrams you create and can use them freely in your teaching and resources.</p></div>
+    <div class="q"><b>How do school licences work?</b><p>A single licence covers your whole maths department, billed annually by invoice or purchase order. Get in touch for a quote.</p></div>
+    <div class="q"><b>Is my work saved?</b><p>Today, work is saved in your browser. Cloud saving that syncs across devices is coming with Pro accounts.</p></div>
+  </div>
+</div></section>
+
+<footer><div class="wrap">
+  <div class="cols">
+    <div class="fcol" style="max-width:260px"><a class="logo" href="index.html"><svg width="26" height="26" viewBox="0 0 40 40" aria-hidden="true"><path d="M13 9 V32" fill="none" stroke="#534ab7" stroke-width="3.6" stroke-linecap="round"/><path d="M13 9 H25 A7 7 0 0 1 30.5 15" fill="none" stroke="#534ab7" stroke-width="3.6" stroke-linecap="round"/><path d="M13 20 H24" fill="none" stroke="#534ab7" stroke-width="3.6" stroke-linecap="round"/></svg><span class="brand" style="font-size:18px">Figura</span></a><p style="margin-top:12px;font-size:14px">Exam-ready maths diagrams, built for teachers.</p></div>
+    <div class="fcol"><h4>Product</h4><a href="features.html">Features</a><a href="pricing.html">Pricing</a><a href="app.html" target="_blank" rel="noopener">Launch app</a></div>
+    <div class="fcol"><h4>Company</h4><a href="about.html">About</a><a href="contact.html">Contact</a></div>
+  </div>
+  <div class="base"><span>© <span class="yr"></span> Figura</span><span>Made for maths teachers</span></div>
+</div><script>document.querySelectorAll(".yr").forEach(e=>e.textContent=new Date().getFullYear());</script></footer>
+<script>
+const PRICES = {
+  GBP:{sym:"£",pro:4,dept:150}, EUR:{sym:"€",pro:5,dept:170},
+  AUD:{sym:"A$",pro:7,dept:290}, NZD:{sym:"NZ$",pro:8,dept:320},
+  USD:{sym:"US$",pro:5,dept:190}, CAD:{sym:"C$",pro:7,dept:260}
+};
+const CCY_BY_COUNTRY = { AU:"AUD", NZ:"NZD", GB:"GBP", US:"USD", CA:"CAD",
+  IE:"EUR",FR:"EUR",DE:"EUR",ES:"EUR",IT:"EUR",NL:"EUR",BE:"EUR",AT:"EUR",PT:"EUR",FI:"EUR",GR:"EUR",LU:"EUR" };
+let userPicked = false;
+try{ userPicked = !!localStorage.getItem("figura-ccy"); }catch(e){}
+function applyCurrency(code, persist){
+  if(!PRICES[code]) code = "USD";
+  const p = PRICES[code];
+  document.querySelectorAll("[data-price]").forEach(el=>{
+    const k = el.getAttribute("data-price");
+    el.textContent = k==="free" ? p.sym+"0" : p.sym + (k==="pro" ? p.pro : p.dept);
+  });
+  const sel = document.getElementById("cur-sel"); if(sel) sel.value = code;
+  if(persist){ userPicked = true; try{ localStorage.setItem("figura-ccy", code); }catch(e){} }
+}
+function guessFromLocale(){
+  const l = (navigator.language||"").toUpperCase();
+  for(const c of ["AU","NZ","GB","US","CA","IE"]) if(l.endsWith("-"+c)) return {AU:"AUD",NZ:"NZD",GB:"GBP",US:"USD",CA:"CAD",IE:"EUR"}[c];
+  return null;
+}
+(function(){
+  let saved=null; try{ saved = localStorage.getItem("figura-ccy"); }catch(e){}
+  if(saved && PRICES[saved]){ applyCurrency(saved); }        // honour a manual choice
+  else {
+    applyCurrency(guessFromLocale() || "USD");                // instant best guess by locale
+    fetch("https://api.country.is/").then(r=>r.json()).then(d=>{
+      if(!userPicked) applyCurrency(CCY_BY_COUNTRY[d.country] || guessFromLocale() || "USD");  // refine by country
+    }).catch(()=>{});
+  }
+  const sel = document.getElementById("cur-sel");
+  if(sel) sel.onchange = ()=> applyCurrency(sel.value, true); // manual pick is remembered
+})();
+</script>
+</body>
+</html>

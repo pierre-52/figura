@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>About — Figura</title>
+<meta name="description" content="Figura is built to give maths teachers back their evenings — clean, exam-ready diagrams without the fight." />
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+  .prose { max-width: 720px; margin: 0 auto; }
+  .prose p { font-size: 18px; color: var(--ink); margin-bottom: 20px; }
+  .prose p.muted { color: var(--muted); }
+  .prose h2 { text-align: left; font-size: 26px; margin: 40px 0 14px; }
+  .stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin: 10px 0; }
+  @media (max-width:700px){ .stats { grid-template-columns: 1fr; } }
+  .stat { background: var(--bg-soft); border: 1px solid var(--border); border-radius: 14px; padding: 24px; text-align: center; }
+  .stat b { display: block; font-size: 30px; font-weight: 700; color: var(--accent); }
+  .stat span { color: var(--muted); font-size: 15px; }
+</style>
+</head>
+<body>
+<header><div class="wrap"><nav>
+  <a class="logo" href="index.html"><svg width="34" height="34" viewBox="0 0 40 40" aria-hidden="true"><defs><linearGradient id="fg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#6d63e0"/><stop offset="1" stop-color="#3f379a"/></linearGradient></defs><path d="M13 9 V32" fill="none" stroke="url(#fg)" stroke-width="3.6" stroke-linecap="round"/><path d="M13 9 H25 A7 7 0 0 1 30.5 15" fill="none" stroke="url(#fg)" stroke-width="3.6" stroke-linecap="round"/><path d="M13 20 H24" fill="none" stroke="url(#fg)" stroke-width="3.6" stroke-linecap="round"/><circle cx="30.5" cy="21" r="1.9" fill="#6d63e0"/></svg><span class="brand">Figura</span></a>
+  <div class="links">
+    <a class="nl" href="features.html">Features</a>
+    <a class="nl" href="pricing.html">Pricing</a>
+    <a class="nl active" href="about.html">About</a>
+    <a class="nl" href="contact.html">Contact</a>
+    <a class="btn btn-primary" href="app.html" target="_blank" rel="noopener">Launch Figura</a>
+  </div>
+</nav></div></header>
+
+<div class="page-head"><div class="wrap narrow"><h1>Give teachers their evenings back</h1><p>Figura exists for one reason: making a maths diagram should take seconds, not half an hour.</p></div></div>
+
+<section><div class="wrap prose">
+  <p>Every maths teacher knows the feeling. It's Sunday evening, the assessment is due tomorrow, and you just need <em>one clean right-angled triangle</em> with the sides labelled. Twenty minutes later you're still wrestling with Word's shape tools, screenshotting from other software, or drawing it by hand and hoping it photocopies.</p>
+  <p class="muted">The tools that exist are either too general — they don't understand maths — or too powerful, built for interactive exploration rather than a quick, static, print-ready figure. Neither fits the actual job.</p>
+  <h2>A tool that speaks maths</h2>
+  <p>Figura is built specifically for the diagrams maths teachers make every week: labelled shapes and angles, graphs, statistics charts, bearings, circle theorems, probability trees, Venn diagrams, number lines, 3D solids and more. Pick a tool, click, label with a built-in maths keyboard, and export a crisp, transparent image straight into your exam or worksheet.</p>
+  <p>No accounts to set up, no learning curve, no clutter. Just the diagram you need, ready in under a minute.</p>
+  <div class="stats">
+    <div class="stat"><b>30+</b><span>diagram types</span></div>
+    <div class="stat"><b>&lt; 1 min</b><span>to a finished figure</span></div>
+    <div class="stat"><b>PNG · SVG</b><span>exam-ready exports</span></div>
+  </div>
+  <h2>Where we're going</h2>
+  <p>Figura is in early access and free to use. Next come saved libraries that follow you across devices, a worksheet builder that lays several diagrams and questions onto one page, and school licences for whole departments. It's built with teachers, so if there's a diagram you need, tell us.</p>
+  <div style="margin-top:30px"><a class="btn btn-primary btn-lg" href="app.html" target="_blank" rel="noopener">Launch Figura →</a></div>
+</div></section>
+
+<footer><div class="wrap">
+  <div class="cols">
+    <div class="fcol" style="max-width:260px"><a class="logo" href="index.html"><svg width="26" height="26" viewBox="0 0 40 40" aria-hidden="true"><path d="M13 9 V32" fill="none" stroke="#534ab7" stroke-width="3.6" stroke-linecap="round"/><path d="M13 9 H25 A7 7 0 0 1 30.5 15" fill="none" stroke="#534ab7" stroke-width="3.6" stroke-linecap="round"/><path d="M13 20 H24" fill="none" stroke="#534ab7" stroke-width="3.6" stroke-linecap="round"/></svg><span class="brand" style="font-size:18px">Figura</span></a><p style="margin-top:12px;font-size:14px">Exam-ready maths diagrams, built for teachers.</p></div>
+    <div class="fcol"><h4>Product</h4><a href="features.html">Features</a><a href="pricing.html">Pricing</a><a href="app.html" target="_blank" rel="noopener">Launch app</a></div>
+    <div class="fcol"><h4>Company</h4><a href="about.html">About</a><a href="contact.html">Contact</a></div>
+  </div>
+  <div class="base"><span>© <span class="yr"></span> Figura</span><span>Made for maths teachers</span></div>
+</div><script>document.querySelectorAll(".yr").forEach(e=>e.textContent=new Date().getFullYear());</script></footer>
+</body>
+</html>
